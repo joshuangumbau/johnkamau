@@ -1,0 +1,49 @@
+/*ExS Portfolio Styles*/
+.singular .comment-content a:not([class]),
+.singular #layout article .entry-content a:not([class]){
+	text-decoration: underline;
+}
+
+.singular .comment-content a:not([class]):hover,
+.singular #layout article .entry-content a:not([class]):hover{
+	text-decoration: none;
+}
+
+.content-absolute .overlap-content{
+	padding: 3em 2em 2em;
+}
+
+@media (max-width: 575px) {
+	.content-absolute .overlap-content{
+		padding: 1.25em 1em;
+	}
+}
+
+.content-absolute .entry-title{
+	font-size: 1.6em;
+	margin-bottom: .75em;
+}
+
+.content-absolute .entry-header + .entry-footer{
+	margin-bottom: 0;
+}
+
+.entry-footer-top{
+	margin: 1em 0 2em;
+}
+
+.entry-header + .entry-footer{
+	margin: 0 0 2em;
+}
+
+.entry-footer:last-child{
+	margin-top: 2em;
+}
+
+.more-tag{
+	padding-top: .75em;
+}
+
+.post-title{
+	font-size: 1.6em;
+}

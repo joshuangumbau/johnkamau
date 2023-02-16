@@ -1,0 +1,159 @@
+/*Side Header*/
+#box{
+	margin-left: var(--mobileNavWidth);
+}
+
+#header,
+#header-affix-wrap{
+	position: fixed;
+	width: var(--mobileNavWidth);
+	right: auto;
+	left: 0;
+	top: 0 !important;
+	bottom: 0;
+	-webkit-transform: none;
+	transform: none;
+	box-shadow: none;
+	z-index: 10;
+}
+
+#header #overlay{
+	margin: 0;
+}
+
+#header .logo{
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0 !important;
+	display: flex;
+	opacity: 1;
+}
+
+#header .logo.logo-vertical{
+	display: inline-block;
+}
+
+#header .logo.no-image .logo-text{
+	margin: 0;
+}
+
+#header .header-button{
+	flex-shrink: 0;
+}
+
+#header #nav_side_toggle.nav-btn:first-child{
+	margin-left: 0;
+	padding: 10px;
+}
+
+#header > div.container,
+#header > div.container-fluid{
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
+	padding: 2.5em var(--mobileNavPX) 2em;
+	overflow-y: auto;
+}
+
+#header > div.container:before,
+#header > div.container:after,
+#header > div.container-fluid:before,
+#header > div.container-fluid:after{
+	display: none;
+}
+
+#header > div.container > *,
+#header > div.container-fluid > *{
+	margin: .75em 0;
+}
+
+#header > div.container .login-links,
+#header > div.container-fluid .login-links{
+	padding-left: 0;
+}
+
+#header > div.container > .top-nav,
+#header > div.container-fluid > .top-nav{
+	margin-top: auto;
+	margin-bottom: auto;
+	flex: initial;
+}
+
+.top-menu{
+	flex-direction: column;
+}
+
+.top-menu li{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.top-menu li > a{
+	order: 1;
+}
+
+.top-menu li:after{
+	order: 2;
+}
+
+.top-menu li > ul{
+	order: 3;
+}
+
+.top-menu li ul{
+	width: 100%;
+}
+
+.top-menu > li{
+	margin: 0;
+	padding: .25em 0;
+	overflow: visible;
+}
+
+.top-menu ul{
+	position: static;
+	opacity: 1;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+}
+
+.top-menu ul li{
+	justify-content: center;
+}
+
+.top-menu ul li ul li{
+	display: flex;
+}
+
+.top-menu ul a{
+	color: inherit !important;
+}
+
+.top-menu ul a:hover{
+	opacity: .7;
+}
+
+.top-menu .hidden.menu-mobile-search,
+.top-menu .hidden.menu-mobile-meta{
+	display: flex !important;
+	margin: 1em 0;
+}
+
+.top-menu .icon-inline{
+	display: flex;
+	padding: .5em 0;
+}
+
+.top-menu .icon-inline span:last-child{
+	line-height: 1.34;
+}
+
+.alignfull{
+	width: calc(100vw - var(--mobileNavWidth));
+	left: calc(50% + var(--mobileNavWidth) / 2);
+}
